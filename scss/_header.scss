@@ -1,0 +1,118 @@
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  transition-duration: .05s;
+  transition-property: background-color;
+  background-color: rgba(255, 255, 255, 0);
+  .nav-btn {
+    display:none;
+  }
+  
+  &.other-page,
+  &.sticky {
+    position: sticky;
+    background-color: rgba(255, 255, 255, 1);
+    height: 92px;
+    transition-property: background-color;
+    border-bottom-color: #f0f0f0;
+    transition-duration: .05s;
+    animation: move-down .2s forwards;
+    li,
+    a,
+    .header-menu-items {
+      color: $text;
+      transition-duration: 300ms;
+      cursor: pointer;
+    }
+    .logo{
+      color: $blue;
+      transition-duration: 300ms;
+      span{
+        color: $dark;
+        transition-duration: 300ms;
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    color: $blue;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+    transition-duration: 300ms;
+    span{
+      color: white;
+      font-weight: 600;
+      font-family: sans-serif;
+      transition-duration: 300ms;
+    }
+  }
+  &-menu {
+    display: flex;
+    &:hover {
+      color: $blue;
+      transition: 1s;
+    }
+    &-items {
+      position: relative;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 28px 0;
+      margin-left: 40px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+      transition-duration: 300ms;
+      &:hover{
+        &:before {
+          content: " ";
+          position: absolute;
+          top: 34px;
+          left: -18px;
+          width: 9px;
+          height: 2px;
+          background: #17bed2;
+          transition-duration: .4s;
+        }
+      }
+    }
+    .dropdown {
+      position: relative;
+      &-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 10rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        left: 28px;
+        top: 40px;
+        a {
+          color: $text;
+          padding: 0.7rem 1rem;
+          text-decoration: none;
+          display: block;
+          &:hover {
+            background-color: $blue;
+            color: #fff;
+          }
+        }
+      }
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+}
+

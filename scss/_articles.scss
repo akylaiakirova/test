@@ -1,0 +1,245 @@
+.articles {
+  .upper-wrap {
+    width: 1088px;
+    height: 430px;
+    margin: 0 auto;
+    position: relative;
+
+    .article-logo {
+      position: absolute;
+      top: 5%;
+      left: 90%;
+      z-index: 1;
+      width: 80px;
+
+      img {
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        -webkit-transition: all .2s ease-in-out;
+
+        &:hover {
+          filter: none;
+          transform: scale(1.08);
+        }
+      }
+    }
+
+    .article-hashtag {
+      font-weight: 600;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: rotate(270deg);
+      color: white;
+      z-index: 1;
+
+      &:hover {
+        color: #17bed2;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 30px 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .text-on-image {
+      position: absolute;
+      right: -3%;
+      top: 50%;
+
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 47px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+
+    .upper-wrap-items {
+      p{
+        display: none;
+      }
+      .back{
+        height: 540px;
+      }
+      img {
+        border-radius: 6px;
+        opacity: 0.8;
+        transition: .3s;
+      }
+      &:hover img{
+        opacity: 1;
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 540px;
+        position: absolute;
+        border-radius: 6px;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) -36.02%, #000000 66.67%);
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .down-wrap {
+    width: 856px;
+    margin: 0 auto 40px;
+    padding: 40px 78px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: relative;
+    z-index: 99;
+    .intext{
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .articles {
+    .upper-wrap {
+      height: auto;
+      width: 100%;
+      .upper-wrap-items {
+        p{
+          display: block;
+          position: absolute;
+          right: 20px;
+          bottom: 16px;
+          color: white;
+        }
+        & img {
+          border-radius: 0;
+        }
+
+        &::after {
+          display: none;
+        }
+
+        .article-logo {
+          left: unset;
+          right: 16px;
+        }
+        .article-hashtag{
+          right: -14px;
+        }
+      }
+
+      .text-on-image {
+        display: none;
+      }
+    }
+
+    .down-wrap {
+      width: 100%;
+      padding: 60px 16px;
+      border-radius: 0;
+      margin: 0;
+      .intext{
+        display: block;
+        margin-bottom: 20px; 
+        p {
+          font-size: 16px;
+          line-height: 27px;
+        }
+  
+        h1 {
+          font-size: 40px;
+          line-height: 47px;
+        }
+        a{
+          color: #5A5D61;
+          display: block;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .articles {
+    .upper-wrap {
+      .upper-wrap-items {
+        .back {
+          height: 100vh;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .articles {
+    .upper-wrap {
+      width: 100%;
+      height: auto;
+
+      .upper-wrap-items {
+        .back {
+          border-radius: 0;
+          height: 280px;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .article-logo,
+      .article-hashtag,
+      p {
+        display: none !important;
+      }
+    }
+
+    .down-wrap {
+      padding: 30px 16px; 
+      .intext{
+        h1{
+          font-size: 30px;
+          line-height: 36px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 22px;
+          width: 100%;
+        }
+      }
+      
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .articles{
+    .down-wrap {
+      .intext{
+        h1{
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,39 @@
+.footer {
+  border-top: 1px solid #edf0f2;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background: #091722;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-logo svg {
+      width: 82px;
+      height: unset;
+      color: #dadada;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .logo {
+      color: #17bed2;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+
+      span {
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+
+
+

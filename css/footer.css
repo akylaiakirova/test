@@ -1,0 +1,31 @@
+.footer {
+  border-top: 1px solid #edf0f2;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background: #091722; }
+  .footer .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer .wrapper .main-logo svg {
+      width: 82px;
+      height: unset;
+      color: #dadada; }
+      .footer .wrapper .main-logo svg:hover {
+        color: #fff; }
+    .footer .wrapper .logo {
+      color: #17bed2;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1.2px; }
+      .footer .wrapper .logo span {
+        color: #fff;
+        font-weight: 600; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsNkJBQTZCO0VBQzdCLGlCQUFpQjtFQUNqQixvQkFBb0I7RUFDcEIsbUJBQW1CLEVBQUE7RUFKckI7SUFPSSxvQkFBYTtJQUFiLG9CQUFhO0lBQWIsYUFBYTtJQUNiLHlCQUE4QjtRQUE5QixzQkFBOEI7WUFBOUIsOEJBQThCO0lBQzlCLHlCQUFtQjtRQUFuQixzQkFBbUI7WUFBbkIsbUJBQW1CLEVBQUE7SUFUdkI7TUFZTSxXQUFXO01BQ1gsYUFBYTtNQUNiLGNBQWMsRUFBQTtNQWRwQjtRQWlCUSxXQUFXLEVBQUE7SUFqQm5CO01Bc0JNLGNBQWM7TUFDZCxlQUFlO01BQ2YsZ0JBQWdCO01BQ2hCLHFCQUFxQixFQUFBO01BekIzQjtRQTRCUSxXQUFXO1FBQ1gsZ0JBQWdCLEVBQUEiLCJmaWxlIjoiZm9vdGVyLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb290ZXIge1xuICBib3JkZXItdG9wOiAxcHggc29saWQgI2VkZjBmMjtcbiAgcGFkZGluZy10b3A6IDI4cHg7XG4gIHBhZGRpbmctYm90dG9tOiAyOHB4O1xuICBiYWNrZ3JvdW5kOiAjMDkxNzIyO1xuXG4gIC53cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gICAgLm1haW4tbG9nbyBzdmcge1xuICAgICAgd2lkdGg6IDgycHg7XG4gICAgICBoZWlnaHQ6IHVuc2V0O1xuICAgICAgY29sb3I6ICNkYWRhZGE7XG5cbiAgICAgICY6aG92ZXIge1xuICAgICAgICBjb2xvcjogI2ZmZjtcbiAgICAgIH1cbiAgICB9XG5cbiAgICAubG9nbyB7XG4gICAgICBjb2xvcjogIzE3YmVkMjtcbiAgICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgICBsZXR0ZXItc3BhY2luZzogMS4ycHg7XG5cbiAgICAgIHNwYW4ge1xuICAgICAgICBjb2xvcjogI2ZmZjtcbiAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cblxuXG5cblxuXG4iXX0= */
